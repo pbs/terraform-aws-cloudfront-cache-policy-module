@@ -1,13 +1,13 @@
-# PBS TF cloudfront cache policy module
+# PBS TF CloudFront Cache Policy Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "cloudfront-cache-policy" {
-    source = "github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=x.y.z"
-}
+github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -21,7 +21,7 @@ This module provisions a Cloudfront cache policy. By default, all cookies and qu
 Integrate this module like so:
 
 ```hcl
-module "cloudfront-cache-policy" {
+module "cache_policy" {
   source = "github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=x.y.z"
 
   # Optional Parameters
