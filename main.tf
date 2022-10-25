@@ -12,7 +12,7 @@ resource "aws_cloudfront_cache_policy" "cache_policy" {
       dynamic "cookies" {
         for_each = length(var.cookies) > 0 ? [1] : []
         content {
-          items = cookies.value
+          items = var.cookies
         }
       }
     }
@@ -21,7 +21,7 @@ resource "aws_cloudfront_cache_policy" "cache_policy" {
       dynamic "headers" {
         for_each = length(var.headers) > 0 ? [1] : []
         content {
-          items = headers.value
+          items = var.headers
         }
       }
     }
@@ -30,7 +30,7 @@ resource "aws_cloudfront_cache_policy" "cache_policy" {
       dynamic "query_strings" {
         for_each = length(var.query_strings) > 0 ? [1] : []
         content {
-          items = query_strings.value
+          items = var.query_strings
         }
       }
     }
