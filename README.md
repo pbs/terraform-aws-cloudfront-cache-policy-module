@@ -1,13 +1,13 @@
-# PBS TF cloudfront cache policy module
+# PBS TF CloudFront Cache Policy Module
 
 ## Installation
 
 ### Using the Repo Source
 
+Use this URL for the source of the module. See the usage examples below for more details.
+
 ```hcl
-module "cloudfront-cache-policy" {
-    source = "github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=0.0.1"
-}
+github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=x.y.z
 ```
 
 ### Alternative Installation Methods
@@ -21,8 +21,8 @@ This module provisions a Cloudfront cache policy. By default, all cookies and qu
 Integrate this module like so:
 
 ```hcl
-module "cloudfront-cache-policy" {
-  source = "github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=0.0.1"
+module "cache_policy" {
+  source = "github.com/pbs/terraform-aws-cloudfront-cache-policy-module?ref=x.y.z"
 
   # Optional Parameters
   # name = "custom-name"
@@ -55,7 +55,7 @@ module "cloudfront-cache-policy" {
 
 If this repo is added as a subtree, then the version of the module should be close to the version shown here:
 
-`0.0.1`
+`x.y.z`
 
 Note, however that subtrees can be altered as desired within repositories.
 
@@ -71,14 +71,14 @@ Below is automatically generated documentation on this Terraform module using [t
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.1.7 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.2 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 4.35.0 |
 
 ## Modules
 
